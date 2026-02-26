@@ -1,6 +1,6 @@
 #set page(
-  paper: "a4",
-  flipped: true,
+  width: 29.7cm,
+  height: auto,
   margin: (x: 0.8cm, y: 1.2cm),
 )
 #set text(font: ("Times New Roman", "SimSun"), size: 8pt)
