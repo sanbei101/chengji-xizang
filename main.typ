@@ -104,20 +104,32 @@
     )
   ]
 ]
-
+#v(-20pt)
 #table(
   columns: (4fr, 1fr, 1fr),
   align: center + horizon,
-  stroke: 0.5pt,
+  stroke: (x, y) => (
+    left: 0.5pt,
+    right: 0.5pt,
+    bottom: 0.5pt,
+    top: if y == 0 { 0pt } else { 0.5pt },
+  ),
   rows: 1.4em,
 
   table.cell[毕业设计(论文)题目：], [平均成绩], [87.2],
   table.cell[], [平均绩点], [3.72],
 )
+#v(-10pt)
+
 #table(
   columns: (3fr, 3fr, 3fr) + (2fr,) * 9,
   align: center + horizon,
-  stroke: 0.5pt,
+  stroke: (x, y) => (
+    left: 0.5pt,
+    right: 0.5pt,
+    bottom: 0.5pt,
+    top: if y == 0 { 0pt } else { 0.5pt },
+  ),
   rows: 1.4em,
 
   [毕业应取得总学分], [已获得总学分], table.cell(rowspan: 2)[其中\ 包括],
